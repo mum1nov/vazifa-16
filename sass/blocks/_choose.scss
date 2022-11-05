@@ -1,0 +1,138 @@
+.choose__inner {
+    position: relative;
+    background-image: url(../images/choose/choose-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 100px 0px 280px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+}
+
+.choose__box {
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+.choose__title {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #FEFCF7;
+}
+
+.choose__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FEFCF7;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+
+.choose__list {
+    position: absolute;
+    display: flex;
+    top: +346px;
+
+}
+
+.choose__item {
+    max-width: 350px;
+    padding: 200px 48px 48px;
+    background: #0E8784;
+    border-radius: 8px;
+    background-image: url(../images/choose/bg-img.png);
+    background-repeat: no-repeat;
+    background-position: center 60px;
+}
+
+.choose__item+.choose__item {
+    margin-left: 30px;
+}
+
+@media only screen and (max-width: 729px) {
+    .choose__inner {
+        background-image: url(../images/tablet/choose-bg.png);
+        padding: 56px 0px 350px;
+
+    }
+
+    .choose__list {
+        flex-direction: column;
+        top: 280px;
+    }
+
+    .choose__item {
+
+        max-width: 573px;
+        padding: 41px 48px 41px 181px;
+        background-image: none;
+    }
+
+    .choose__item::before {
+        position: absolute;
+        display: block;
+        width: 55px;
+        height: 56px;
+        background-image: url(../images/tablet/choose-img.png);
+        background-repeat: no-repeat;
+        left: +120px;
+
+        content: "";
+
+    }
+
+    .choose__item~.choose__item {
+        margin-bottom: 15px;
+        margin-top: 30px;
+    }
+
+    .choose__item+.choose__item {
+        margin-left: 0%;
+
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+    .choose__inner {
+        background-image: url(../images/mobile/choose-bg.png);
+        padding: 64px 0px 578px;
+    }
+
+    .choose__box {
+        max-width: 280px;
+    }
+
+    .choose__item {
+        max-width: 279px;
+        padding: 150px 33px 51px;
+    }
+
+    .choose__item::before {
+        position: absolute;
+        display: block;
+        top: 0px;
+        width: 71px;
+        height: 72px;
+
+    }
+
+    .choose__title {
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    .choose__text {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+   
+}
