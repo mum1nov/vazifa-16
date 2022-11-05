@@ -1,0 +1,73 @@
+.commit__inner {
+    display: flex;
+    align-items: center;
+    padding: 90px 30px 180px;
+    background-image: url(../images/about/commit-bg.jpg);
+    background-repeat: no-repeat;
+    margin-top: 168px;
+    margin-bottom: 34px;
+}
+
+.commit-box {
+    width: 100%;
+    max-width: 540px;
+    margin-left: auto;
+
+}
+
+.commit-box__title {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #333D4B;
+}
+
+.commit-box__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333D4B;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 729px) {
+    .commit__inner {
+        background-image: url(../images/tablet/about-commitbg.png);
+        padding: 0%;
+    }
+
+    .commit-box {
+        max-width: 340px;
+    }
+
+    .commit-box__title {
+        font-size: 32px;
+        line-height: 48px;
+    }
+    .commit-box__text{
+        font-size: 15px;
+        line-height: 25px;
+
+    }
+}
+@media only screen and (max-width: 576px)
+{
+    .commit__inner{
+        padding-top: 450px;
+        background-image: url(../images/mobile/commit-bg.jpg);
+        background-position:  top center;
+    }
+    .commit-box{
+        margin: 0 auto;
+    }
+    .commit-box__title{
+        text-align: center;
+    }
+    .commit-box__text{
+        text-align: center;
+    }
+}
+

@@ -8,6 +8,7 @@ body {
   flex-direction: column;
   height: 100%;
   font-family: "Barlow", sans-serif;
+  background-color: #F2F2F2;
 }
 
 *,
@@ -72,7 +73,7 @@ img {
     padding: 40px 0px;
   }
 }
-@media only screen and (max-width: 586px) {
+@media only screen and (max-width: 576px) {
   .site-header__navbar {
     display: none;
   }
@@ -614,6 +615,340 @@ img {
     margin-top: 24px;
   }
 }
+.about-hero__inner {
+  padding: 137px 85px 87px;
+  background-image: url(../images/about/hero/bg-img.png);
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  background-size: 100% 100%;
+}
+
+.about-hero__box {
+  margin-top: 0%;
+  width: 100%;
+  max-width: 445px;
+}
+
+.about-hero__title {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #FEFCF7;
+  margin-bottom: 24px;
+}
+
+.about-hero__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FEFCF7;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+@media only screen and (max-width: 729px) {
+  .about-hero__inner {
+    background-image: url(../images/tablet/about-hero-bg.jpg);
+    padding: 118px 58px 78px;
+  }
+  .about-hero__box {
+    max-width: 398px;
+  }
+  .about-hero__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .about-hero__text {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+@media only screen and (max-width: 579px) {
+  .about-hero__inner {
+    background-image: url(../images/mobile/about-bg-img.jpg);
+    padding: 111px 24px 44px;
+  }
+  .about-hero__box {
+    max-width: 279px;
+    margin: 0 auto;
+  }
+  .about-hero__title {
+    font-size: 28px;
+    line-height: 28px;
+    text-align: center;
+  }
+  .about-hero__text {
+    text-align: center;
+  }
+}
+.commit__inner {
+  display: flex;
+  align-items: center;
+  padding: 90px 30px 180px;
+  background-image: url(../images/about/commit-bg.jpg);
+  background-repeat: no-repeat;
+  margin-top: 168px;
+  margin-bottom: 34px;
+}
+
+.commit-box {
+  width: 100%;
+  max-width: 540px;
+  margin-left: auto;
+}
+
+.commit-box__title {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #333D4B;
+}
+
+.commit-box__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #333D4B;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 729px) {
+  .commit__inner {
+    background-image: url(../images/tablet/about-commitbg.png);
+    padding: 0%;
+  }
+  .commit-box {
+    max-width: 340px;
+  }
+  .commit-box__title {
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .commit-box__text {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .commit__inner {
+    padding-top: 450px;
+    background-image: url(../images/mobile/commit-bg.jpg);
+    background-position: top center;
+  }
+  .commit-box {
+    margin: 0 auto;
+  }
+  .commit-box__title {
+    text-align: center;
+  }
+  .commit-box__text {
+    text-align: center;
+  }
+}
+.quality__inner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-image: url(../images/about/commitbg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 90px 85px 176px;
+  margin-top: 170px;
+}
+
+.quality-box {
+  width: 100%;
+  max-width: 540px;
+}
+
+.quality__img {
+  position: absolute;
+  left: 717px;
+  top: -95px;
+  border-radius: 10px;
+}
+
+.quality__title {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #FEFCF7;
+  margin-bottom: 32px;
+}
+
+.quality__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FEFCF7;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 729px) {
+  .quality__inner {
+    padding: 296px 74px 67px;
+    margin-top: 250px;
+  }
+  .quality-box::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 573px;
+    height: 320px;
+    background-size: 100% 100%;
+    background-image: url(../images/tablet/qualityimg.jpg);
+    background-repeat: no-repeat;
+    top: -170px;
+  }
+  .quality__title {
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+  }
+  .quality__text {
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+  }
+  .quality__img {
+    display: none;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .quality__inner {
+    padding: 142px 24px 61px;
+  }
+  .quality-box {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  .quality__title {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  .quality__text {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .quality-box::before {
+    width: 279px;
+    height: 176px;
+    background-image: url(../images/mobile/qualitybg.jpg);
+    top: -90px;
+  }
+}
+.our__inner {
+  display: flex;
+  flex-direction: column;
+  margin: 168px 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.our__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.our__item {
+  position: relative;
+  width: 100%;
+  max-width: 285px;
+  padding-top: 100px;
+}
+
+.our__item::before {
+  position: absolute;
+  display: inline-block;
+  width: 41px;
+  height: 49px;
+  background-image: url(../images/about/ourimg.png);
+  background-repeat: no-repeat;
+  top: 20px;
+  content: "";
+}
+
+.our__item:nth-child(2)::before {
+  background-image: url(../images/about/canada.png);
+  width: 52px;
+  height: 50px;
+}
+
+.our__item:nth-child(3)::before {
+  background-image: url(../images/about/aus.png);
+  width: 49px;
+  height: 44px;
+}
+
+.our__title {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #83888F;
+}
+
+.our__name {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  color: #333D4B;
+}
+
+.ours__item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #333D4B;
+  padding: 3px 0px;
+}
+
+@media screen and (max-width: 729px) {
+  .our__item {
+    max-width: 223px;
+  }
+  .our__name {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .ours__item {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .our__list {
+    display: flex;
+    flex-direction: column;
+  }
+  .our__item {
+    max-width: 327px;
+  }
+  .our__name {
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+  }
+  .ours__item {
+    text-align: center;
+  }
+  .our__item::before {
+    left: 75px;
+    top: 50px;
+  }
+}
 .container {
   width: 100%;
   max-width: 1320px;
@@ -623,6 +958,7 @@ img {
 
 .list {
   margin: 0;
+  padding: 0%;
   list-style-type: none;
   transition: all 0.7s ease;
 }

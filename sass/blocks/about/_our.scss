@@ -1,0 +1,113 @@
+.our__inner {
+    display: flex;
+    flex-direction: column;
+    margin: 168px 0px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.our__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.our__item {
+    position: relative;
+    width: 100%;
+    max-width: 285px;
+    padding-top: 100px;
+}
+
+.our__item::before {
+    position: absolute;
+    display: inline-block;
+    width: 41px;
+    height: 49px;
+    background-image: url(../images/about/ourimg.png);
+    background-repeat: no-repeat;
+    top: +20px;
+    content: "";
+}
+
+.our__item:nth-child(2)::before {
+    background-image: url(../images/about/canada.png);
+    width: 52px;
+    height: 50px;
+}
+
+.our__item:nth-child(3)::before {
+    background-image: url(../images/about/aus.png);
+    width: 49px;
+    height: 44px;
+}
+
+.our__title {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #83888F;
+}
+
+.our__name {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    color: #333D4B;
+}
+
+.ours__item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333D4B;
+    padding: 3px 0px;
+}
+
+@media screen and (max-width: 729px) {
+    .our__item {
+        max-width: 223px;
+    }
+
+    .our__name {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .ours__item {
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .our__list {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .our__item {
+        max-width: 327px;
+    }
+
+    .our__name {
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 36px;
+        text-align: center;
+    }
+    .ours__item{
+        text-align: center;
+    }
+
+    .our__item::before {
+        left: +75px;
+        top: +50px;
+
+    }
+}

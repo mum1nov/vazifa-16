@@ -1,0 +1,106 @@
+.quality__inner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../images/about/commitbg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 90px 85px 176px;
+    margin-top: 170px;
+}
+
+.quality-box {
+    width: 100%;
+    max-width: 540px;
+}
+
+.quality__img {
+    position: absolute;
+    left: +717px;
+    top: -95px;
+    border-radius: 10px;
+}
+
+.quality__title {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #FEFCF7;
+    margin-bottom: 32px;
+}
+
+.quality__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FEFCF7;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 729px) {
+    .quality__inner {
+        padding: 296px 74px 67px;
+        margin-top: 250px;
+    }
+    
+    .quality-box::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 573px;
+        height: 320px;
+        background-size: 100% 100%;
+        background-image: url(../images/tablet/qualityimg.jpg);
+        background-repeat: no-repeat;
+        top: -170px;
+        
+    }
+    
+    .quality__title {
+        font-size: 32px;
+        line-height: 48px;
+        text-align: center;
+    }
+
+    .quality__text {
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+    }
+    
+    .quality__img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .quality__inner {
+        padding: 142px 24px 61px;
+    }
+    
+    .quality-box {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+    
+    
+    .quality__title {
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    .quality__text {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .quality-box::before {
+        width: 279px;
+        height: 176px;
+        background-image: url(../images/mobile/qualitybg.jpg);
+        top: -90px;
+    }
+}
